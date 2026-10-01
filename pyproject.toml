@@ -7,7 +7,7 @@ packages = ["src/clonetrast"]
 
 [project]
 name = "clonetrast"
-version = "0.1.0"
+version = "0.1.1"
 description = "Revealing pan-cancer clonal niches of T cells from single-cell RNA sequencing using contrastive learning."
 readme = "README.md"
 license = { file = "LICENSE" }

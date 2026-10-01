@@ -3,11 +3,11 @@
   <a href="https://codecov.io/gh/yizhak-lab-ccg/CloneTrast"><img alt="codecov" src="https://img.shields.io/codecov/c/github/yizhak-lab-ccg/CloneTrast?logo=codecov&logoColor=white"></a>
   <a href="https://clonetrast.readthedocs.io/en/latest/"><img alt="Docs" src="https://img.shields.io/readthedocs/clonetrast/latest.svg?logo=readthedocs&logoColor=white"></a>
   <img alt="Python 3.10-3.13" src="https://img.shields.io/badge/Python-3.10--3.13-blue.svg?logo=python&logoColor=white">
-  <a href="LICENSE"><img alt="License: MIT" src="https://custom-icon-badges.demolab.com/badge/License-MIT-blue.svg?logo=law-24&logoColor=white"></a>
+  <a href="https://github.com/yizhak-lab-ccg/CloneTrast/blob/main/LICENSE"><img alt="License: MIT" src="https://custom-icon-badges.demolab.com/badge/License-MIT-blue.svg?logo=law-24&logoColor=white"></a>
 </p>
 
 <p align="center">
-  <img src="docs/_static/images/CloneTrast_logo_for_git.png" alt="CloneTrast" width="400">
+  <img src="https://raw.githubusercontent.com/yizhak-lab-ccg/CloneTrast/main/docs/_static/images/CloneTrast_logo_for_git.png" alt="CloneTrast" width="400">
 </p>
 
 <h1 align="center">
@@ -20,7 +20,7 @@ At inference you only need scRNA-seq UMI counts, without paired scTCR-seq. Publi
 ## Graphical description
 
 <p align="center">
-  <img src="docs/_static/images/figure_1_git.jpg" alt="CloneTrast figure 1 overview" width="800">
+  <img src="https://raw.githubusercontent.com/yizhak-lab-ccg/CloneTrast/main/docs/_static/images/figure_1_git.jpg" alt="CloneTrast figure 1 overview" width="800">
 </p>
 
 ## Clone labels vs. TCR sequences
@@ -50,7 +50,7 @@ This specific modeling approach results in a distinct embedding space capturing 
 ## Training and inference description
 
 <p align="center">
-  <img src="docs/_static/images/figure_2_git.jpg" alt="CloneTrast figure 2 overview" width="800">
+  <img src="https://raw.githubusercontent.com/yizhak-lab-ccg/CloneTrast/main/docs/_static/images/figure_2_git.jpg" alt="CloneTrast figure 2 overview" width="800">
 </p>
 
 ## Installation
