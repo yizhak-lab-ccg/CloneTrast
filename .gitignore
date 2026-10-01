@@ -45,4 +45,4 @@ clonetrast_out/
 !tests/fixtures/*.h5ad
 
 # Notebooks
-notebooks/
+/notebooks/
