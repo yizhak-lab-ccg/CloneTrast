@@ -1,0 +1,145 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/clonetrast"]
+
+[project]
+name = "clonetrast"
+version = "0.1.0"
+description = "Revealing pan-cancer clonal niches of T cells from single-cell RNA sequencing using contrastive learning."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Ofir Shorer", email = "ofirshorer@campus.technion.ac.il" },
+]
+requires-python = ">=3.10,<3.14"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+    "anndata>=0.10",
+    "numpy",
+    "pandas",
+    "scanpy>=1.9",
+    "numba>=0.61",
+    "scipy",
+    "scikit-learn",
+    "torch>=2.0",
+    "umap-learn",
+    "matplotlib",
+    "session-info2",
+    "nbformat>=5.10.4",
+    "harmonypy",
+    "leidenalg",
+    "adjusttext",
+    "airr",
+    "mudata",
+    "scirpy",
+    "squarify",
+    "ipykernel",
+    "optuna",
+    "plotly",
+    "requests",
+    "tqdm",
+    "seaborn",
+    "statsmodels",
+    "colorcet",
+    "captum",
+    "joblib",
+    "muon",
+    "magic-impute",
+    "pooch",
+    "scrublet",
+]
+
+[project.optional-dependencies]
+# Install CUDA PyTorch separately if needed, e.g.:
+#   uv pip install torch --index-url https://download.pytorch.org/whl/cu128
+# The default PyPI torch may be CPU-only.
+# Keep versions in sync with [dependency-groups].docs.
+docs = [
+    "ipython>=8.0",
+    "myst-nb>=1.1",
+    "myst-parser>=3.0",
+    "sphinx>=7.4,<9",
+    "sphinx-autodoc-typehints>=2.0",
+    "sphinx-book-theme>=1.1",
+    "sphinx-copybutton>=0.5",
+    "sphinxext-opengraph>=0.9",
+]
+
+[project.urls]
+Documentation = "https://clonetrast.readthedocs.io/en/latest/"
+Homepage = "https://github.com/ofirshorer/CloneTrast"
+Repository = "https://github.com/ofirshorer/CloneTrast"
+Issues = "https://github.com/ofirshorer/CloneTrast/issues"
+
+[project.scripts]
+clonetrast = "clonetrast.cli:main"
+
+[dependency-groups]
+dev = [
+    "pre-commit",
+    "ruff",
+    "twine>=4.0.2",
+]
+test = [
+    "coverage>=7.10",
+    "pytest",
+    "pytest-cov",
+]
+# Sphinx stack (same pins as [project.optional-dependencies].docs).
+docs = [
+    "ipython>=8.0",
+    "myst-nb>=1.1",
+    "myst-parser>=3.0",
+    "sphinx>=7.4,<9",
+    "sphinx-autodoc-typehints>=2.0",
+    "sphinx-book-theme>=1.1",
+    "sphinx-copybutton>=0.5",
+    "sphinxext-opengraph>=0.9",
+]
+
+[tool.hatch.envs.default]
+installer = "uv"
+dependency-groups = ["dev"]
+
+[tool.hatch.envs.docs]
+features = ["docs"]
+installer = "uv"
+
+[tool.hatch.envs.docs.scripts]
+build = "sphinx-build -M html docs docs/_build {args}"
+open = "python -m webbrowser -t docs/_build/html/index.html"
+
+[tool.hatch.envs.hatch-test]
+dependency-groups = ["dev", "test"]
+
+[tool.ruff]
+line-length = 120
+src = ["src"]
+lint.select = ["B", "C4", "D", "E", "F", "I", "UP", "W"]
+# D203/D213 conflict with D211/D212 when the full D category is selected.
+lint.ignore = ["D100", "D104", "D107", "D203", "D213", "E501"]
+lint.per-file-ignores."*/__init__.py" = ["F401"]
+lint.per-file-ignores."tests/**" = ["D103"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["--import-mode=importlib"]
+filterwarnings = [
+    "ignore:n_jobs value .* overridden to 1 by setting random_state:UserWarning",
+]
+
+[tool.coverage.run]
+source = ["clonetrast"]
+omit = ["**/test_*.py"]

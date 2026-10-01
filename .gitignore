@@ -1,0 +1,48 @@
+# Temp files
+.DS_Store
+*~
+buck-out/
+
+# Virtual env
+.venv/
+.venv-ci/
+venv/
+env/
+
+# Compiled
+__pycache__/
+.*cache/
+*.py[cod]
+*.so
+
+# Distribution / packaging
+/dist/
+/build/
+*.egg-info/
+*.egg
+
+# Tests and coverage
+/data/
+/node_modules/
+.coverage*
+coverage.xml
+htmlcov/
+.pytest_cache/
+
+# docs
+docs/generated/
+docs/_build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Outputs
+clonetrast_out/
+*.h5ad
+!tests/fixtures/*.h5ad
+
+# Notebooks
+notebooks/
