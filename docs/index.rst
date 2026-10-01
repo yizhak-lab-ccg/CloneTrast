@@ -4,7 +4,7 @@ CloneTrast
 **Supervised contrastive learning for T-cell clonal architecture from single-cell RNA-seq.**
 
 CloneTrast maps **gene expression alone** to a latent space where cells from the same T-cell clone cluster together.
-At inference you only need scRNA-seq UMI counts, without paired scTCR-seq. The public **pre-trained model** (hosted on `Figshare <https://figshare.com/articles/32228991>`__) is downloaded automatically on first use, with an additional complementary model used to predict clone size from gene expression alone. You can then visualize your data with UMAP to explore clonal structure for downstream analysis.
+At inference you only need scRNA-seq UMI counts, without paired scTCR-seq. The public **pre-trained model** (hosted on `Figshare <https://doi.org/10.6084/m9.figshare.32228991>`__) is downloaded automatically on first use, with an additional complementary model used to predict clone size from gene expression alone. You can then visualize your data with UMAP to explore clonal structure for downstream analysis.
 
 Graphical description
 ---------------------

@@ -6,7 +6,7 @@ For inference, you only need **gene expression (scRNA-seq)**. CloneTrast does **
 Pre-trained models
 ------------------
 
-Two checkpoints are available on `Figshare <https://figshare.com/articles/32228991>`__ and cached locally after the first use of the Python API:
+Two checkpoints are available on `Figshare <https://doi.org/10.6084/m9.figshare.32228991>`__ and cached locally after the first use of the Python API:
 
 .. list-table::
    :header-rows: 1

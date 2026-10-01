@@ -44,18 +44,18 @@ class _FakeResponse:
 
 def test_normalize_figshare_download_url():
     url = (
-        "https://figshare.com/ndownloader/articles/32228991"
-        "?folder_path=contrastive_model&private_link=01fe17c21afddf090c79"
+        "https://figshare.com/ndownloader/articles/32228991/versions/1"
+        "?folder_path=contrastive_model"
     )
     out = pretrained.normalize_figshare_download_url(url)
-    assert out.startswith("https://ndownloader.figshare.com/articles/32228991")
+    assert out.startswith("https://ndownloader.figshare.com/articles/32228991/versions/1")
     assert "folder_path=contrastive_model" in out
 
 
 def test_normalize_figshare_download_url_unchanged():
-    already = "https://ndownloader.figshare.com/articles/32228991?folder_path=x"
+    already = "https://ndownloader.figshare.com/articles/32228991/versions/1?folder_path=x"
     assert pretrained.normalize_figshare_download_url(already) == already
-    other = "https://figshare.com/articles/32228991"
+    other = "https://figshare.com/articles/32228991/versions/1"
     assert pretrained.normalize_figshare_download_url(other) == other
 
 

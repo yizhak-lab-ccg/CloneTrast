@@ -12,7 +12,7 @@ HERE = Path(__file__).parent.resolve()
 sys.path.insert(0, str(HERE.parent / "src"))
 
 # -- Project information -----------------------------------------------------
-GITHUB_USER = "ofirshorer"
+GITHUB_USER = "yizhak-lab-ccg"
 GITHUB_REPO = "CloneTrast"
 
 def _read_version_from_pyproject() -> str:

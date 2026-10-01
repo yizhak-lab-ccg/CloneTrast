@@ -79,9 +79,9 @@ docs = [
 
 [project.urls]
 Documentation = "https://clonetrast.readthedocs.io/en/latest/"
-Homepage = "https://github.com/ofirshorer/CloneTrast"
-Repository = "https://github.com/ofirshorer/CloneTrast"
-Issues = "https://github.com/ofirshorer/CloneTrast/issues"
+Homepage = "https://github.com/yizhak-lab-ccg/CloneTrast"
+Repository = "https://github.com/yizhak-lab-ccg/CloneTrast"
+Issues = "https://github.com/yizhak-lab-ccg/CloneTrast/issues"
 
 [project.scripts]
 clonetrast = "clonetrast.cli:main"

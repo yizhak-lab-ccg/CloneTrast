@@ -13,12 +13,12 @@ import requests
 from tqdm import tqdm
 
 FIGSHARE_CONTRASTIVE_MODEL_URL = (
-    "https://figshare.com/ndownloader/articles/32228991"
-    "?folder_path=contrastive_model&private_link=01fe17c21afddf090c79"
+    "https://figshare.com/ndownloader/articles/32228991/versions/1"
+    "?folder_path=contrastive_model"
 )
 FIGSHARE_CLONE_SIZE_MODEL_URL = (
-    "https://figshare.com/ndownloader/articles/32228991"
-    "?folder_path=clone_size_model&private_link=01fe17c21afddf090c79"
+    "https://figshare.com/ndownloader/articles/32228991/versions/1"
+    "?folder_path=clone_size_model"
 )
 
 

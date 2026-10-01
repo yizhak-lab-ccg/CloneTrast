@@ -139,7 +139,7 @@ To work with the latest version on GitHub (for development or contributions):
 
 .. code-block:: bash
 
-   git clone https://github.com/ofirshorer/CloneTrast.git
+   git clone https://github.com/yizhak-lab-ccg/CloneTrast.git
    cd CloneTrast
 
 CloneTrast uses `uv <https://docs.astral.sh/uv/>`__ for fast, reliable dependency management.

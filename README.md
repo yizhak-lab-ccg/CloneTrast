@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://github.com/ofirshorer/CloneTrast/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/ofirshorer/CloneTrast/actions/workflows/ci.yml/badge.svg?branch=main"></a>
-  <a href="https://codecov.io/gh/ofirshorer/CloneTrast"><img alt="codecov" src="https://img.shields.io/codecov/c/github/ofirshorer/CloneTrast?logo=codecov&logoColor=white"></a>
+  <a href="https://github.com/yizhak-lab-ccg/CloneTrast/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/yizhak-lab-ccg/CloneTrast/actions/workflows/ci.yml/badge.svg?branch=main"></a>
+  <a href="https://codecov.io/gh/yizhak-lab-ccg/CloneTrast"><img alt="codecov" src="https://img.shields.io/codecov/c/github/yizhak-lab-ccg/CloneTrast?logo=codecov&logoColor=white"></a>
   <a href="https://clonetrast.readthedocs.io/en/latest/"><img alt="Docs" src="https://img.shields.io/readthedocs/clonetrast/latest.svg?logo=readthedocs&logoColor=white"></a>
   <img alt="Python 3.10-3.13" src="https://img.shields.io/badge/Python-3.10--3.13-blue.svg?logo=python&logoColor=white">
   <a href="LICENSE"><img alt="License: MIT" src="https://custom-icon-badges.demolab.com/badge/License-MIT-blue.svg?logo=law-24&logoColor=white"></a>
@@ -15,7 +15,7 @@
 </h1>
 
 CloneTrast maps **gene expression alone** to a latent space where cells from the same T-cell clone cluster together.
-At inference you only need scRNA-seq UMI counts, without paired scTCR-seq. Public **pre-trained model** (hosted on [Figshare](https://figshare.com/articles/32228991)) is downloaded automatically on first use, with an additional complementary model used to predict clone size from gene expression alone. Following, you can visualize your data and further explore the clonal functional structure for downstream analysis.
+At inference you only need scRNA-seq UMI counts, without paired scTCR-seq. Public **pre-trained model** (hosted on [Figshare](https://doi.org/10.6084/m9.figshare.32228991)) is downloaded automatically on first use, with an additional complementary model used to predict clone size from gene expression alone. Following, you can visualize your data and further explore the clonal functional structure for downstream analysis.
 
 ## Graphical description
 
@@ -130,5 +130,10 @@ CloneTrast's logo, the project's graphical description, and the graphical descri
 ---
 
 <div align="center">
-  <p><em>This project was created in favor of the scientific community worldwide, with a special dedication to the cancer research community.</em></p>
-  <p><em>We hope you'll find this repository helpful, and we warmly welcome any requests or suggestions - please don't hesitate to reach out!</em></p>
+<p><em>This project was created in favor of the scientific community worldwide, with a special dedication to the cancer research community.</em></p>
+<p><em>We hope you'll find this repository helpful, and we warmly welcome any requests or suggestions - please don't hesitate to reach out!</em></p>
+
+<a href="https://mapmyvisitors.com/web/1c8l2">
+<img src="https://mapmyvisitors.com/map.png?d=dwfyT67_zJfn-BQ-6x-NAaKvey45Vl66GhWHhFcDZHw&cl=ffffff" alt="Visitor Map">
+</a>
+</div>
