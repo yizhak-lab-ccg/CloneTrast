@@ -535,7 +535,7 @@ requires-dist = [
     { name = "anndata", specifier = ">=0.10" },
     { name = "captum" },
     { name = "colorcet" },
-    { name = "harmonypy" },
+    { name = "harmonypy", specifier = ">=0.2,<1" },
     { name = "ipykernel" },
     { name = "ipython", marker = "extra == 'docs'", specifier = ">=8.0" },
     { name = "joblib" },

@@ -38,7 +38,7 @@ dependencies = [
     "matplotlib",
     "session-info2",
     "nbformat>=5.10.4",
-    "harmonypy",
+    "harmonypy>=0.2,<1",
     "leidenalg",
     "adjusttext",
     "airr",
