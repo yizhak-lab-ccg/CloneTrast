@@ -4,6 +4,7 @@
   <a href="https://clonetrast.readthedocs.io/en/latest/"><img alt="Docs" src="https://img.shields.io/readthedocs/clonetrast/latest.svg?logo=readthedocs&logoColor=white"></a>
   <img alt="Python 3.10-3.13" src="https://img.shields.io/badge/Python-3.10--3.13-blue.svg?logo=python&logoColor=white">
   <a href="https://github.com/yizhak-lab-ccg/CloneTrast/blob/main/LICENSE"><img alt="License: MIT" src="https://custom-icon-badges.demolab.com/badge/License-MIT-blue.svg?logo=law-24&logoColor=white"></a>
+  <a href="https://pepy.tech/project/clonetrast"><img src="https://static.pepy.tech/badge/clonetrast" alt="Downloads" /></a>
 </p>
 
 <p align="center">
