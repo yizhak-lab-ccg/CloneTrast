@@ -54,13 +54,12 @@ Python API
   # Applying the contrastive model and creating a two-dimensional representation with UMAP
   ct.tl.embed(
       adata,
-      use_pretrained=True,          # default; downloads contrastive model on first run
-      device="cuda",                # or "cpu"
+      use_pretrained=True          # default; downloads contrastive model on first run
   )
   ct.tl.compute_umap(adata, obsm_key="X_clonetrast", umap_key="X_umap_clonetrast")
 
   # Optional complementary model to predict log clone size per cell
-  ct.tl.predict_clone_size(adata, use_pretrained=True, device="cuda")
+  ct.tl.predict_clone_size(adata, use_pretrained=True)
 
   # Visualize
   sc.pl.embedding(adata, basis="umap_clonetrast", color=["predicted_clone_size"])

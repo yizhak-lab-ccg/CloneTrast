@@ -70,7 +70,7 @@ The pre-trained models expect **Ensembl gene IDs** in `adata.var_names` (e.g. `E
 - AnnData with gene expression (cells × genes), e.g. raw UMI counts in `adata.X`. Raw counts require subsequent row-normalization and log-transformation, as described below.
 - `adata.var_names`: **Ensembl IDs** for compatibility with the public checkpoints.
 - **Optional:** `adata.obs['clone_id']` for visualization or evaluation (not required to run the model).
-- **Importantly:** the model was trained using T cells alone. It is therefore required to ensure your data includes only T cells as input.
+- **Importantly:** the model was trained using T cells alone. It is therefore required to ensure your data includes only T cells as input (for the results to be meaningful).
 
 ### Python API
 
@@ -88,13 +88,12 @@ sc.pp.log1p(adata)
 # Applying the contrastive model and creating a two-dimensional representation with UMAP
 ct.tl.embed(
     adata,
-    use_pretrained=True,          # default; downloads contrastive model on first run
-    device="cuda",                # or "cpu"
+    use_pretrained=True          # default; downloads contrastive model on first run
 )
 ct.tl.compute_umap(adata, obsm_key="X_clonetrast", umap_key="X_umap_clonetrast")
 
 # Optional complementary model to predict log clone size per cell
-ct.tl.predict_clone_size(adata, use_pretrained=True, device="cuda")
+ct.tl.predict_clone_size(adata, use_pretrained=True)
 
 # Visualize
 sc.pl.embedding(adata, basis="umap_clonetrast", color=["predicted_clone_size"])
