@@ -48,8 +48,10 @@ Option 1: Using a virtual environment with pip
 Install a CUDA-enabled PyTorch build that matches your driver.
 CUDA 12.8 is shown as an example; pick the index URL for your CUDA version from the
 `PyTorch install page <https://pytorch.org/get-started/locally/>`__.
-Pay attention that this installtion may require deleteing the existing CPU-only PyTorch installation in adavance.
-Practically, for inference alone this step is not necessary, and is more of a concern for training.
+
+**Pay attention**: This installtion may require deleteing the existing CPU-only PyTorch installation in advance.
+
+**Important note:** Practically, for inference alone this step is not necessary, and is more of a concern for training and development.
 
 .. code-block:: bash
 
@@ -76,8 +78,9 @@ Option 2: Using Conda with pip
 
 **3. Optional: NVIDIA GPU with CUDA**
 
-Pay attention that this installtion may require deleteing the existing CPU-only PyTorch installation in adavance.
-Practically, for inference alone this step is not necessary, and is more of a concern for training.
+Pay attention that this installtion may require deleteing the existing CPU-only PyTorch installation in advance.
+
+**Important note:** Practically, for inference alone this step is not necessary, and is more of a concern for training and development.
 
 .. code-block:: bash
 
@@ -117,8 +120,9 @@ Option 3: Using the uv package manager
 
 **4. Optional: NVIDIA GPU with CUDA**
 
-Pay attention that this installtion may require deleteing the existing CPU-only PyTorch installation in adavance.
-Practically, for inference alone this step is not necessary, and is more of a concern for training.
+Pay attention that this installtion may require deleteing the existing CPU-only PyTorch installation in advance.
+
+**Important note:** Practically, for inference alone this step is not necessary, and is more of a concern for training and development.
 
 .. code-block:: bash
 
@@ -178,8 +182,9 @@ Install the package and common developer dependency groups from the lock file:
 
 **GPU (CUDA 12.8 example):** after the sync above, install a CUDA-enabled PyTorch build.
 
-Pay attention that this installtion may require deleteing the existing CPU-only PyTorch installation in adavance.
-Practically, for inference alone this step is not necessary, and is more of a concern for training.
+Pay attention that this installtion may require deleteing the existing CPU-only PyTorch installation in advance.
+
+**Important note:** Practically, for inference alone this step is not necessary, and is more of a concern for training and development.
 
 .. code-block:: bash
 
