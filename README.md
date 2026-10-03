@@ -102,6 +102,8 @@ sc.pl.embedding(adata, basis="umap_clonetrast", color=["predicted_clone_size"])
 
 Embeddings are stored in `adata.obsm['X_clonetrast']`; UMAP coordinates in `adata.obsm['X_umap_clonetrast']`.
 
+Predicted clone size is stored in `adata.obs['predicted_clone_size']`.
+
 ## Tutorial notebooks
 
 Two step-by-step tutorials:
