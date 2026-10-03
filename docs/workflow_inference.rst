@@ -66,6 +66,8 @@ Python API
 
 Embeddings are stored in ``adata.obsm['X_clonetrast']``; UMAP coordinates in ``adata.obsm['X_umap_clonetrast']``.
 
+Predicted clone size is stored in `adata.obs['predicted_clone_size']`.
+
 Clonal purity score evaluation
 ------------------------------
 

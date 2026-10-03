@@ -93,6 +93,8 @@ You only need **gene expression (scRNA-seq)**. Optional ``clone_id`` labels are 
 
 Embeddings are stored in ``adata.obsm['X_clonetrast']``; UMAP coordinates in ``adata.obsm['X_umap_clonetrast']``.
 
+Predicted clone size is stored in `adata.obs['predicted_clone_size']`.
+
 After the first run, models are cached under ``~/.cache/clonetrast/pretrained_models/``.
 
 More detail: :doc:`workflow_inference`, :doc:`data_format`, :doc:`cli_reference`.
