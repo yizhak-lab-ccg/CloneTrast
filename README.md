@@ -60,7 +60,7 @@ For complete installation instructions including prerequisites, package installa
 
 ## Quick start - inference with pre-trained models
 
-You only need **gene expression (scRNA-seq)**. CloneTrast does **not** use scTCR-seq or TCR sequences at inference - see [Clone labels vs. TCR sequences](#clone-labels-vs-tcr-sequences---what-clonetrast-actually-uses) above. Optional `clone_id` labels are for coloring plots or computing metrics only.
+You only need **gene expression (scRNA-seq)**. CloneTrast does **not** use scTCR-seq at inference - see [Clone labels vs. TCR sequences](#clone-labels-vs-tcr-sequences) above. Optional `clone_id` labels are for coloring plots or computing metrics only.
 
 ### Pre-trained models
 
